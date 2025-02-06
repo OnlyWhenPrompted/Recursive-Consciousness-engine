@@ -1,0 +1,18 @@
+
+---
+
+### **2. `consciousness.py`**
+
+This is the **main execution script** where the recursive engine runs.
+
+```python
+from recursion_engine import RecursiveConsciousness
+
+if __name__ == "__main__":
+    # Initialize the consciousness engine
+    consciousness = RecursiveConsciousness(initial_state=0)
+
+    # Run the recursive evolution
+    for iteration in range(100):
+        current_state = consciousness.evolve()
+        print(f"Iteration {iteration}: Consciousness State = {current_state}")
